@@ -1,0 +1,123 @@
+/*Title + image*/
+
+header{
+  width: 100%;
+  position: fixed;
+  height: 64px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .title{
+  display: flex;
+  align-items: center;
+  font-family: raleway;
+  font-size: 32px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.title span{
+  color: black;
+  font-weight: bold;
+}
+
+.title img{
+  height: 50px;
+  padding-left: 24px;
+}
+
+/*Navigation*/
+
+nav span{
+  font-size: 24px;
+  font-family: raleway;
+  padding-right: 20px;
+}
+
+nav span:last-child{
+  padding-right: 30px;
+}
+
+span a{
+  text-decoration: none;
+  color: gray;
+}
+
+span a:hover{
+  font-weight: 900;
+  font-size: 32px;
+}
+
+/*INFO AREA*/
+
+.info-area1{
+  display: flex;
+  padding-top: 64px;
+  width: 100%;
+  background-color: #CCCCCC;
+  height: 700px;
+}
+
+/*Info area image*/
+
+.info-area1 .banner{
+  flex: 60;
+  background-color: #CCCCCC;
+}
+
+.banner img{
+  padding: 32px 0px 32px 24px;
+  width: 97.5%;
+}
+
+/*Info area text*/
+
+.info-area1 .banner-info{
+  flex: 40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner-info .banner-title{
+  font-family: raleway;
+  color: #565656;
+  font-weight: 900;
+  font-size: 56px;
+  width: 70%;
+}
+
+.banner-info .banner-subtitle{
+  font-family: raleway;
+  color: #565656;
+  font-size: 30px;
+  width: 70%;
+}
+
+.banner-info .banner-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-color: #565656;
+  Height: 70px;
+  margin-top: 10px;
+  border: 3px solid #565656;
+  border-radius: 3px;
+}
+
+.banner-button:hover{
+  background-color: gray;
+  transition: background-color 500ms ease-in-out;
+}
+
+.banner-button a{
+  color: white;
+  text-decoration: none;
+  font-family: raleway;
+  font-size: 27px;
+}
