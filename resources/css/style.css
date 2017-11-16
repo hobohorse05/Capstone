@@ -1,3 +1,8 @@
+/*I KNOW THIS IS REAAAAAALLLLLLY BADLY OPTOMISED FOR SCREENS>1920X1080...
+I have not had time to do any of this properly because I have exams at school
+as I do this. Also I did not really have a scale of how this would
+all come together if I used rem's instead.*/
+
 /*Title + image*/
 
 header{
@@ -41,12 +46,14 @@ nav span:last-child{
   padding-right: 30px;
 }
 
-span a{
+nav a{
   text-decoration: none;
   color: gray;
 }
 
-span a:hover{
+nav a:hover{
+  transition: font-size 200ms ease-in-out;
+  color: #C55C5C;
   font-weight: 900;
   font-size: 32px;
 }
@@ -54,6 +61,7 @@ span a:hover{
 /*INFO AREA*/
 
 .info-area1{
+  padding-bottom: 40px;
   display: flex;
   padding-top: 64px;
   width: 100%;
@@ -64,7 +72,7 @@ span a:hover{
 /*Info area image*/
 
 .info-area1 .banner{
-  flex: 60;
+  flex: 3;
   background-color: #CCCCCC;
 }
 
@@ -76,7 +84,7 @@ span a:hover{
 /*Info area text*/
 
 .info-area1 .banner-info{
-  flex: 40;
+  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,9 +93,9 @@ span a:hover{
 
 .banner-info .banner-title{
   font-family: raleway;
-  color: #565656;
+  color: #383838;
   font-weight: 900;
-  font-size: 56px;
+  font-size: 53px;
   width: 70%;
 }
 
@@ -98,6 +106,8 @@ span a:hover{
   width: 70%;
 }
 
+/*Banner button*/
+
 .banner-info .banner-button{
   display: flex;
   justify-content: center;
@@ -107,11 +117,11 @@ span a:hover{
   Height: 70px;
   margin-top: 10px;
   border: 3px solid #565656;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .banner-button:hover{
-  background-color: gray;
+  background-color: #C55C5C;
   transition: background-color 500ms ease-in-out;
 }
 
@@ -120,4 +130,101 @@ span a:hover{
   text-decoration: none;
   font-family: raleway;
   font-size: 27px;
+}
+
+/*Info area 2*/
+
+.area-2{
+  padding-top: 35px;
+  height: 900px;
+  display: flex;
+}
+
+.area-2 .img-2{
+
+  border-right: 1px solid gray;
+  flex: 8;
+  background-color: white;
+}
+
+.area-2 .info-area-2{
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.img-2 img{
+  padding: 0px 12px 32px 12px;
+  width: 97.5%;
+}
+
+.img-2 .subtext{
+  padding: 32px 50px;
+}
+
+.subtext .area-2-subtext1{
+  font-family: raleway;
+  color: #383838;
+  font-weight: 900;
+  font-size: 53px;
+}
+
+.subtext .area-2-subtext2{
+  font-family: 'PT Sans', sans-serif;
+  color: #565656;
+  font-size: 24px;
+}
+
+.subtext .area-2-subtext3{
+  font-family: raleway;
+  color: #565656;
+  font-weight: bold;
+  font-size: 16px;
+}
+.sub-area-1, .sub-area-2, .sub-area-3{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  border-bottom: 8px solid #CECECE;
+  align-items: center;
+}
+
+
+.sub-area-img1, .sub-area-img2, .sub-area-img3{
+  padding-left: 20px;
+	width: 44%;
+}
+
+.sub-area-txt1, .sub-area-txt2, .sub-area-txt3{
+  padding-left: 32px;
+	width: 56%;
+}
+
+.sub-area-img1 img, .sub-area-img2 img, .sub-area-img3 img {
+  width: 100%;
+}
+
+#desc1, #desc2, #desc3{
+  font-family: raleway;
+  color: #383838;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+#sub-desc1, #sub-desc2, #sub-desc3{
+  font-family: "PT sans";
+  color: #565656;
+  font-weight: 200;
+  font-size: 24px;
+}
+
+#link1 a, #link2 a, #link3 a{
+  font-size: 20px;
+  text-decoration: none;
+  color: blue;
+}
+
+.sub-area-1:hover, .sub-area-2:hover, .sub-area-3:hover{
+  background-color: #CECECE;
+  transition-duration: 370ms;
 }
