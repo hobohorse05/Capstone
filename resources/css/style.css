@@ -138,6 +138,7 @@ nav a:hover{
   padding-top: 35px;
   height: 900px;
   display: flex;
+  padding-bottom: 30px;
 }
 
 .area-2 .img-2{
@@ -189,7 +190,9 @@ nav a:hover{
   align-items: center;
 }
 
-
+.sub-area-3{
+  border-bottom: none;
+}
 .sub-area-img1, .sub-area-img2, .sub-area-img3{
   padding-left: 20px;
 	width: 44%;
@@ -221,10 +224,67 @@ nav a:hover{
 #link1 a, #link2 a, #link3 a{
   font-size: 20px;
   text-decoration: none;
-  color: blue;
+  color: #C55C5C;
 }
 
 .sub-area-1:hover, .sub-area-2:hover, .sub-area-3:hover{
   background-color: #CECECE;
   transition-duration: 370ms;
+}
+
+/*START LEARNING AREA*/
+
+.start-learning{
+  padding-top: 40px;
+  background-color: #CECECE;
+  height: 900px;
+}
+
+.start-learning .titlecard{
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.start-learning .content-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 410px;
+  background-color: #CECECE;
+}
+
+.start-learning .content-container-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 410px;
+  background-color: #CECECE;
+}
+
+.content-container .content1, .content2, .content3, .content4, .content5, .content6{
+  height: 380px;
+  background-color: white;
+  width: 25%;
+}
+
+.content1 img, .content2 img, .content3 img, .content4 img, .content5 img, .content6 img{
+  width: 100%;
+}
+
+.content-title{
+  font-family: raleway;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.content-subtitle{
+  font-family: "PT sans";
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.content1:hover, .content2:hover, .content3:hover, .content4:hover, .content5:hover, .content6:hover{
+  background-color: #CC8E8E;
+  transition-duration: 350ms;
 }
