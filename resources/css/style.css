@@ -48,12 +48,12 @@ nav span:last-child{
 
 nav a{
   text-decoration: none;
-  color: gray;
+  color: #C55C5C;
+  font-weight: bold;
 }
 
 nav a:hover{
   transition: font-size 200ms ease-in-out;
-  color: #C55C5C;
   font-weight: 900;
   font-size: 32px;
 }
@@ -207,7 +207,7 @@ nav a:hover{
   width: 100%;
 }
 
-#desc1, #desc2, #desc3{
+.desc{
   font-family: raleway;
   color: #383838;
   font-weight: 900;
@@ -235,6 +235,7 @@ nav a:hover{
 /*START LEARNING AREA*/
 
 .start-learning{
+  padding-bottom: 60px;
   padding-top: 40px;
   background-color: #CECECE;
   height: 900px;
@@ -279,6 +280,7 @@ nav a:hover{
 }
 
 .content-subtitle{
+  color: #565656;
   font-family: "PT sans";
   font-size: 20px;
   padding-left: 10px;
@@ -287,4 +289,56 @@ nav a:hover{
 .content1:hover, .content2:hover, .content3:hover, .content4:hover, .content5:hover, .content6:hover{
   background-color: #CC8E8E;
   transition-duration: 350ms;
+}
+
+/*AREA 3*/
+
+.area-3{
+  height: 800px;
+}
+
+.area-3 .thesis{
+  padding: 40px 0px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.area-3 .thesis-container{
+  display: flex;
+  height: 100%;
+}
+
+.area-3 .thesis-video{
+  flex: 8;
+}
+
+.area-3 .thesis-info-container{
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.thesis-video video{
+  width: 95.5%;
+  padding: 20px;
+}
+
+#no-border{
+  border-bottom: none;
+}
+
+/*Footer*/
+
+.footer{
+  width: 100%;
+  height: 150px;
+  background-color: red;
+}
+
+.footer .footer-link{
+  text-align: right;
+}
+
+.footer-link a{
+  padding: 20px;
 }
